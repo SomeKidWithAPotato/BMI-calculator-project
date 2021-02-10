@@ -1,0 +1,46 @@
+#This is a BMI calculator, using both imperial and metric units.
+
+input('Do you wish to use METRIC or IMPERIAL units (please use all caps): ')
+
+#user chose METRIC
+while input == 'METRIC':
+    #tells user to input
+    height1 = float(input('Please enter height in metric units'))
+    weight1 = float(input('Please enter weight in metric units'))
+   #math for the metric
+    bmi1 = weight1/(height1*height1)
+
+#if elif else for metric BMI
+    if bmi1 <= 18.5:
+        print('Your BMI is under 18.5, which indicates you are currently underweight')
+
+    elif bmi1 >= 18.5 and bmi1 <= 25:
+        print('Your BMI is between 18.5 and 25, which indicates you are currently in the normal BMI range')
+
+    elif bmi1 <=25:
+        print('Your BMI is above 25, which means you are currently overweight and/or obese')
+
+    else:
+        print("Something has happened! Please restart and try again")
+
+#user chose IMPERIAL
+while input == 'IMPERIAL':
+    height2 = float(input('Please enter height in imperial units'))
+    weight2 = float(input('please input height in imperial units'))
+    #math for imperial
+    bmi2 = (weight2*703)/(height2*height2)
+
+#if elif else for imperial BMI
+    if bmi2 <= 18.5:
+        print('Your BMI is under 18.5, which indicates ypu are currently underweight')
+
+    elif bmi1 >= 18.5 and bmi1 <= 25:
+        print('Your BMI is between 18.5 and 25, which indicates you are in the normal BMI range')
+
+    elif bmi2 <=25:
+        print('Your BMi is above 25, which means you are currently overweight and/or obese')
+
+    else:
+        print("Something has happened! Please restart and try again")
+
+#end of program
